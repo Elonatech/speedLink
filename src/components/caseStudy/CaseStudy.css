@@ -1,0 +1,72 @@
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 12rem;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 18px;
+    margin: 10px 0 20px;
+  }
+  
+  .moreWorkButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #C82333; /* Red color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  .caseStudyContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .caseStudy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .caseStudyText {
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+  }
+  
+  .redBackground {
+    background-color: #F8D7DA;
+  }
+  
+  .blueBackground {
+    background-color: #D1ECF1;
+  }
+  
+  .image {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+  }
+  
+  .caseStudyButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  

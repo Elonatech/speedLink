@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import TopBar from './components/top-bar/Top-bar';
+import Navbar from './components/nav-bar/Nav-bar';
+import HeroSection from './components/hero-section/Hero-section';
+import ServiceSection from './components/services-section/Services';
+import Services from './components/feature-section/Feature-section';
+import Industries from './components/industries/Industries';
+import Products from './components/products/Products';
+import CaseStudies from './components/caseStudy/CaseStudy';
+import TechnologyStack from './components/technology/Technology';
+import TopClients from './components/topClient/TopClient';
+import Footer from './components/footer/Footer';
+import Contact from './components/contact/Contact';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TopBar />
+      <Navbar />
+      <HeroSection />
+      <ServiceSection />   
+      <Services />
+      <Industries /> 
+      <Products />
+      <CaseStudies /> 
+      <TechnologyStack /> 
+      <TopClients />
+      <Contact />
+      <Footer />                      
     </div>
   );
 }

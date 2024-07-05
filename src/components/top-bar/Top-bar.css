@@ -1,0 +1,39 @@
+/* TopBar.css */
+.top-bar {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, red, rgb(0, 0, 255));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10rem;
+    box-sizing: border-box;
+  }
+  
+  .left, .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  
+  .contact-item {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .contact-item span{
+    font-size: 2rem;
+  }
+  .contact-item .icon {
+    margin-right: 5px;
+    font-size: 2rem;
+  }
+  

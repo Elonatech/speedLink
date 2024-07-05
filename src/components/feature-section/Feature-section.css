@@ -1,0 +1,106 @@
+.services {
+    width: 1200px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: rgb(2, 2, 86);
+    font-size: 3rem;
+    margin-bottom:20px;
+  }
+  
+  p {
+    color: #4A4A4A;
+    font-size: 2rem;
+    width: 60%;
+    line-height: 1.8em;
+  }
+  
+  .services-container {
+    display: flex;
+  }
+  
+  .services-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .service-item {
+    padding: 20px 50px;
+    border: 1px solid #f0f0f0;
+    margin: 5px 0;
+    cursor: pointer;
+    width: 40rem;
+    height: auto;
+    font-size: 2.4rem;
+    border-radius: 0 40px 40px 0;
+    border: 1px solid rgba(187, 11, 11, 0.789);
+  }
+  
+  .service-item.active {
+    background-color: rgb(169, 22, 22);
+    color: white;
+  }
+  
+  .service-details {
+    margin-left: 20px;
+    flex-grow: 1;
+  }
+  
+  .details-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .who-we-do-button {
+    background-color: rgb(196, 8, 8);
+    color: rgba(255, 255, 255, 0.799);
+    border: none;
+    padding: 15px 28px;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 10px;
+  }
+  
+  .details-content {
+    background: linear-gradient(to bottom, rgba(238, 6, 6, 0.552), rgba(5, 5, 226, 0.609));
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 5rem;
+  }
+  
+  .explore-more-button {
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    font-size: 2.2rem;
+    padding: 15px 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+  }
+
+  .details-content h3 {
+    margin-top: 22.5rem;
+    font-size: 2.2rem;
+  }
+
+  .details-content ul {
+    list-style-type: none;
+    margin-top: 1.2rem;
+  }
+
+  .details-content ul li {
+    font-size: 1.8em;
+  }
+
+.arrow {
+    font-size: 24px;
+}
+  
