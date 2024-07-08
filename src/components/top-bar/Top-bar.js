@@ -1,20 +1,24 @@
 // TopBar.js
 import React from 'react';
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaEnvelope, } from 'react-icons/fa';
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
+
 import './Top-bar.css';
 
 const TopBar = () => {
   return (
     <div className="top-bar">
-      <div className="left">
-        <FaFacebook className="icon" />
-        <FaTwitter className="icon" />
-        <FaLinkedin className="icon" />
-        <FaInstagram className="icon" />
+      <div className="left move">
+        <FaFacebookF className="icon background"/>
+        <FaTwitter className="icon background" />
+        <FaLinkedinIn className="icon background"/>
+        <FaInstagram className="icon background" />
       </div>
       <div className="right">
         <div className="contact-item">
-          <FaPhone className="icon" />
+          <FaPhoneAlt className="icon phone"/>
           <span>tel: +2349167716220 </span>
         </div>
         <div className="contact-item">

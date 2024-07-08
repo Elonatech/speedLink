@@ -27,6 +27,7 @@
     color: red;
     font-size: 1.2rem;
     margin-bottom: 20px;
+    letter-spacing: 0.2em;
   }
 
   .text-content .heading3 {
@@ -90,7 +91,7 @@
   }
   
   .box-button:hover {
-    background-color: lightblack;
+    background-color: rgba(0, 0, 0, 0.87);
   }
 
   .text-container {
@@ -103,4 +104,39 @@
   .text-container h2 {
     font-size: large;
     margin-bottom: 10px;
+  }
+
+  .service-content .cta-button {
+    font-size: 2.5rem;
+    cursor: pointer;
+    background-color: #DA2124;
+    transition: background-color 0.3s ease;
+  }
+
+  .service-content .tel-icon {
+    font-size: 1.8rem;
+  }
+
+  .service-content h3 {
+    width: 400px;
+  }
+
+  .service-content p {
+    width: 550px;
+  }
+
+  .service-content .cta-button:hover {
+    background-color: blue;
+  }
+  .service-box h2 {
+    color: white;
+  }
+
+  .service-box p {
+    color: rgba(255, 255, 255, 0.925);
+    width: 550px;
+    font-size: 1.4rem;
+  }
+  .service-box button {
+    font-size: 1.8rem;
   }

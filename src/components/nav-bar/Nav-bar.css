@@ -21,19 +21,27 @@
   
   .nav-item {
     position: relative;
-    margin: 0 10px;
+    margin: 0 1px;
   }
   
   .nav-link {
-    color: blue;
+    color: #0A2863;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px 8px;
     position: relative;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
   }
   
   .nav-link:hover {
-    text-decoration: underline;
+    text-decoration: overline;
     text-decoration-color: red;
+  }
+
+  .nav-link .dropdown-icon {
+    margin-left: 5px;
+    font-size: 2.5rem;
   }
   
   .dropdown {
@@ -67,15 +75,17 @@
   }
   
   .get-in-touch-button {
-    background: red;
+    background: #DA2124;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 4px;
     margin-left: 10px;
+    font-size: 1.5rem;
   }
   
   .get-in-touch-button:hover {
-    background: darkblue;
+    background: rgb(5, 5, 26);
   }
+
   

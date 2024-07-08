@@ -20,7 +20,7 @@ const serviceDetails = {
       'GPS tracking system',
       'Access control and time-attendance solutions'
     ],
-    image: '/path/to/image.png' // Use the correct path to your image
+    image: '/path/to/image.png'
   }
 };
 

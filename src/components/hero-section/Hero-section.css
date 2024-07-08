@@ -1,7 +1,7 @@
 .hero-container {
     position: relative;
     width: 100%;
-    height: 72vh;
+    height: 100vh;
     overflow: hidden;
     background-color: rgba(2, 23, 109, 0.656);
   }
@@ -28,21 +28,27 @@
   
   h1 {
     margin-bottom: 20px;
-    font-size: 5rem;
+    font-size: 5.1rem;
     font-weight: 700;
   }
   
   p {
     margin-bottom: 30px;
-    font-size: 1.5rem;
+    font-size: 0.2rem;
   }
+
+  .content h1,
+.content p {
+  color: white;
+  width: 800px;
+}
   
-  .cta-button {
+  .hero-container .cta-button {
     background-color: #0693e3;
     color: white;
     border: none;
     padding: 20px 40px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     cursor: pointer;
     display: inline-block;
     align-items: center;
@@ -50,12 +56,11 @@
     
   }
   
-  .cta-button .arrow {
-    margin-right: 10px;
-  }
-  
-  .cta-button:hover {
-    background-color: #0693e3;
+  .hero-container .cta-button:hover {
+    background-color: #2397da;
     padding: 13px 28px;
+  }
+  .cta-button .icon-arrow {
+    font-size: 1.5rem;
   }
   

@@ -1,5 +1,7 @@
 import React from 'react';
 import './Nav-bar.css';
+import { IoSearch } from "react-icons/io5";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Navbar = () => {
   return (
@@ -12,7 +14,7 @@ const Navbar = () => {
           <a href="#home" className="nav-link">Home</a>
         </li>
         <li className="nav-item">
-          <a href="#about" className="nav-link">About Us</a>
+          <a href="#about" className="nav-link">About Us <RiArrowDropDownLine className='dropdown-icon'/></a>
           <div className="dropdown">
             <a href="#link1" className="dropdown-item">Link 1</a>
             <a href="#link2" className="dropdown-item">Link 2</a>
@@ -20,7 +22,7 @@ const Navbar = () => {
           </div>
         </li>
         <li className="nav-item">
-          <a href="#link" className="nav-link">Services</a>
+          <a href="#link" className="nav-link">Services <RiArrowDropDownLine className='dropdown-icon'/></a>
           <div className="dropdown">
             <a href="#link" className="dropdown-item">Link 1</a>
             <a href="#link" className="dropdown-item">Link 2</a>
@@ -28,7 +30,7 @@ const Navbar = () => {
           </div>
         </li>
         <li className="nav-item">
-          <a href="#link" className="nav-link">Case Study</a>
+          <a href="#link" className="nav-link">Case Study <RiArrowDropDownLine className='dropdown-icon'/></a>
           <div className="dropdown">
             <a href="#link" className="dropdown-item">Link 1</a>
             <a href="#link" className="dropdown-item">Link 2</a>
@@ -36,7 +38,7 @@ const Navbar = () => {
           </div>
         </li>
         <li className="nav-item">
-          <a href="#product" className="nav-link">Product</a>
+          <a href="#product" className="nav-link">Product <RiArrowDropDownLine className='dropdown-icon'/></a>
           <div className="dropdown">
             <a href="#link" className="dropdown-item">Link 1</a>
             <a href="#link" className="dropdown-item">Link 2</a>
@@ -44,9 +46,9 @@ const Navbar = () => {
           </div>
         </li>
         <li className="nav-item">
-          <a href="#resources" className="nav-link">Resources</a>
+          <a href="#resources" className="nav-link">Resources <RiArrowDropDownLine className='dropdown-icon'/></a>
         </li>
-        <li className="search-icon">🔍</li>
+        <IoSearch className="search-icon"/>
         <li>
           <a href="#getintouch" className="get-in-touch-button">Get in Touch</a>
         </li>
