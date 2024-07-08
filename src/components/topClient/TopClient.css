@@ -11,7 +11,7 @@
     color: rgb(8, 8, 53);
   }
   
-  .clients {
+  .container p {
     width: 300px;
     margin: 0 auto;
     display: flex;
@@ -20,11 +20,21 @@
     gap: 20px;
   }
   
-  .clients img {
+  .container img {
     max-width: 100%;
     height: auto;
+    margin-top: 20px;
   }
   .container p {
     width: 100%;
+  }
+  .container .dot {
+    color: rgb(12, 91, 210);
+  }
+  .container .dash {
+    color:rgb(12, 91, 210);
+    font-size: 4rem;
+    vertical-align: bottom;
+    margin-bottom: -13px;
   }
   

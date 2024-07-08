@@ -37,12 +37,15 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    width: 1200px;
   }
   
   .caseStudyText {
     padding: 20px;
     border-radius: 10px;
-    flex: 1;
+    height: 500px;
+    text-align: left;
+    padding: 30px 50px;
   }
   
   .redBackground {
@@ -51,17 +54,19 @@
   
   .blueBackground {
     background-color: #D1ECF1;
+    width: 560px;
+    height: 470px;
+    margin-top: -95px;
   }
   
   .image {
     width: 500px;
     height: 300px;
-    border-radius: 10px;
   }
   
   .caseStudyButton {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 2rem;
     color: white;
     background-color: black;
     border: none;
@@ -69,4 +74,64 @@
     cursor: pointer;
     margin-top: 10px;
   }
+
+  .caseStudyButton:hover {
+    background-color: #C82333;
+  }
+  .container h1, p {
+    text-align: left;
+  }
+
+  .container .description {
+    width: 550px;
+  }
+
+  .container .moreWorkButton {
+    float: right;
+    padding: 1.5rem;
+    margin-top: -70px;
+    font-size: 1.7rem;
+  }
+
+  .container .tel-icon {
+    font-size:  1.8rem;
+    vertical-align: bottom;
+  }
+
+  .caseStudy .image-one {
+    margin-left: -20px;
+    height: 370.27px;
+    width: 554px;
+  }
+
+  .caseStudy .image-two {
+    margin-right: -20px;
+    height: 450px;
+    width: 640px;
+    margin-top: -70px;
+  }
+
+  .caseStudyText h2 {
+    margin-top: 50px;
+    color: black;
+    font-size: 4.1rem;
+    font-weight: 700;
+  }
+
+  .caseStudyText p {
+    font-size: 2.1rem;
+  }
+
+  .caseStudy .arrow {
+    vertical-align: bottom;
+  }
+
+  .two {
+    margin-top: 13rem;
+  }
+
+  .caseStudyText .text-two {
+    margin-top: 10px;
+  }
+
   

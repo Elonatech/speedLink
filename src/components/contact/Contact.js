@@ -1,10 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram, FaLinkedinIn, FaEnvelope } from 'react-icons/fa';
 import './Contact.css';
-import { IoMdArrowDropright } from "react-icons/io";
+import { IoMdArrowDropright, IoMdArrowDropup } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const Contact = () => {
+  // State to manage expanded state for each service item
+  const [expandedItems, setExpandedItems] = useState({
+    digitalServices: false,
+    cloudServices: false,
+    networkingServices: false,
+    certifiedTraining: false,
+  });
+
+  // Function to toggle expansion state for each service item
+  const toggleExpand = (item) => {
+    setExpandedItems({
+      ...expandedItems,
+      [item]: !expandedItems[item],
+    });
+  };
+
   return (
     <footer className="footer">
       <div className="footer-section">
@@ -17,14 +33,26 @@ const Contact = () => {
       <div className="footer-section">
         <h3>Services</h3>
         <ul>
-          <li className='first'> <IoMdArrowDropright className='arrow'/> Digital Services</li>
-          <hr></hr>
-          <li className='first'><IoMdArrowDropright className='arrow'/> Cloud Services</li>
-          <hr></hr>
-          <li className='first'><IoMdArrowDropright className='arrow'/> Networking Services</li>
-          <hr></hr>
-          <li className='first'> <IoMdArrowDropright className='arrow'/> Certified Training</li>
-          <hr/>
+          <li className={`first ${expandedItems.digitalServices ? 'expanded' : ''}`} onClick={() => toggleExpand('digitalServices')}>
+            {expandedItems.digitalServices ? <IoMdArrowDropup className='arrow'/> : <IoMdArrowDropright className='arrow'/>}
+            Digital Services
+          </li>
+          <hr className={expandedItems.digitalServices ? 'expanded' : ''}></hr>
+          <li className={`first ${expandedItems.cloudServices ? 'expanded' : ''}`} onClick={() => toggleExpand('cloudServices')}>
+            {expandedItems.cloudServices ? <IoMdArrowDropup className='arrow'/> : <IoMdArrowDropright  className='arrow'/>}
+            Cloud Services
+          </li>
+          <hr className={expandedItems.cloudServices ? 'expanded' : ''}></hr>
+          <li className={`first ${expandedItems.networkingServices ? 'expanded' : ''}`} onClick={() => toggleExpand('networkingServices')}>
+            {expandedItems.networkingServices ? <IoMdArrowDropup className='arrow'/> : <IoMdArrowDropright  className='arrow'/>}
+            Networking Services
+          </li>
+          <hr className={expandedItems.networkingServices ? 'expanded' : ''}></hr>
+          <li className={`first ${expandedItems.certifiedTraining ? 'expanded' : ''}`} onClick={() => toggleExpand('certifiedTraining')}>
+            {expandedItems.certifiedTraining ? <IoMdArrowDropup className='arrow'/> : <IoMdArrowDropright  className='arrow'/>}
+            Certified Training
+          </li>
+          <hr className={expandedItems.certifiedTraining ? 'expanded' : ''}></hr>
         </ul>
       </div>
       <div className="footer-section">

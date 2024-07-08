@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './Feature-section.css';
+import { BiLogoTelegram } from "react-icons/bi";
+import { IoIosArrowForward } from "react-icons/io";
+import { FaArrowRight } from "react-icons/fa";
 
 const services = [
   'IT Services',
@@ -12,6 +15,25 @@ const services = [
 ];
 
 const serviceDetails = {
+  'IT Services': {
+    title: 'IT SERVICES',
+    description: [
+      'Software Application Development',
+      'Software Installation',
+      'Web design and development'
+    ],
+    image: '/path/to/image.png'
+  },
+  'Network Services': {
+    title: 'NETWORKING SERVICES',
+    description: [
+      'Routing and Switching',
+      'VOIP – Voice over Internet Protocol',
+      'Fibre to the home',
+      'ISP – Internet Service Provider'
+    ],
+    image: '/path/to/image.png'
+  },
   'Technical Security': {
     title: 'TECHNICAL SECURITY',
     description: [
@@ -19,6 +41,45 @@ const serviceDetails = {
       'Intrusion prevention systems',
       'GPS tracking system',
       'Access control and time-attendance solutions'
+    ],
+    image: '/path/to/image.png'
+  },
+  'Digital Marketing': {
+    title: 'DIGITAL MARKETING',
+    description: [
+      'Social Media Marketing',
+      'Digital Advertising',
+      'Media planning and buying',
+      'Search Engine Optimization',
+      'Email marketing'
+    ],
+    image: '/path/to/image.png'
+  },
+  'Cloud Services': {
+    title: 'CLOUD SERVICES',
+    description: [
+      'Storage Infrastructure',
+      'Cloud Hosting',
+      'Cloud Based ERP/CRM'
+    ],
+    image: '/path/to/image.png'
+  },
+  'Collaboration System': {
+    title: 'COMMUNICATION & COLLABORATION SYSTEM',
+    description: [
+      'Audio & Video conferencing',
+      'Live Streaming',
+      'Radio Communications Systems'
+    ],
+    image: '/path/to/image.png'
+  },
+  'Certified Training': {
+    title: 'CERTIFIED TRAINING',
+    description: [
+      'Mikrotik Certification',
+      'CCTV Installation',
+      'Web app development',
+      'Web design and Development'
     ],
     image: '/path/to/image.png'
   }
@@ -37,7 +98,7 @@ const Services = () => {
             <div
               key={service}
               className={`service-item ${activeService === service ? 'active' : ''}`}
-              onClick={() => setActiveService(service)}
+              onMouseEnter={() => setActiveService(service)}
             >
               {service}
             </div>
@@ -45,18 +106,18 @@ const Services = () => {
         </div>
         <div className="service-details">
           <div className="details-header">
-            <button className="who-we-do-button">Who we do</button>
+            <button className="who-we-do-button wta-btn">Who we do <BiLogoTelegram className='tel-icon'/> </button>
           </div>
           <div className="details-content">
-          <div>
-            <h3>{serviceDetails[activeService].title}</h3>
-            <ul>
-              {serviceDetails[activeService].description.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-            <button className="explore-more-button">Explore More <span className='arrow'>&rarr;</span></button>
-          </div>
+            <div>
+              <h3>{serviceDetails[activeService].title}</h3>
+              <ul>
+                {serviceDetails[activeService].description.map((item, index) => (
+                  <li key={index}><IoIosArrowForward className='arrow'/> {item}</li>
+                ))}
+              </ul>
+              <button className="explore-more-button">Explore More <FaArrowRight className='explor-arr'/></button>
+            </div>
           </div>
         </div>
       </div>

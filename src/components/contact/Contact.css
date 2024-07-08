@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  height: 100vh;
+  min-height: 70vh;
   display: flex;
   justify-content: space-around;
   background-color: #0a0e27;
@@ -15,7 +15,7 @@
   padding: 20px;
   background-color: #1a2238;
   border-radius: 10px;
-  height: 70vh;
+  height: fit-content;
 }
 
 .footer-section img.footer-logo {
@@ -45,11 +45,13 @@
 .footer-section .first {
   font-weight: 400;
   color: #ffffffe3;
+  cursor: pointer;
 }
 
 .footer-section .second {
   font-weight: 700;
   color: #ffffffb8;
+  cursor: pointer;
 }
 
 .footer-section ul {
@@ -62,6 +64,7 @@
   display: flex;
   align-items: center;
   font-size: 1.7rem;
+  cursor: pointer;
 }
 
 .footer-section li::before {
@@ -69,6 +72,17 @@
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+
+.footer-section .arrow {
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-section .expanded {
+  height: auto;
+  opacity: 1;
+  margin: 10px 0;
 }
 
 .footer-section .social-icons {
@@ -89,13 +103,6 @@
   line-height: 1;
 }
 
-.footer-section .align-center {
-  width: 250px;
-  background-color: #4b4f58;
-  border-radius: 5px;
-  padding: 10px;
-}
-
 .footer-section .social-icons > *:hover {
   color: #cccccc;
 }
@@ -104,13 +111,14 @@
 .footer-section address > svg {
   margin-right: 10px;
 }
-.footer-section hr {
-  height: 0.1px;
-  border-color: #333;
-  margin: 10px 0;
-}
 
 .footer-section .icon {
   font-size: 1.5rem;
 }
 
+.align-center {
+  width: 250px;
+  background-color: #4b4f58;
+  border-radius: 5px;
+  padding: 10px;
+}

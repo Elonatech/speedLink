@@ -1,91 +1,90 @@
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3rem 12rem;
-    background: #fff;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .nav-links {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-item {
-    position: relative;
-    margin: 0 1px;
-  }
-  
-  .nav-link {
-    color: #0A2863;
-    text-decoration: none;
-    padding: 10px 8px;
-    position: relative;
-    font-size: 1.6rem;
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-link:hover {
-    text-decoration: overline;
-    text-decoration-color: red;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 12rem;
+  background: #fff;
+}
 
-  .nav-link .dropdown-icon {
-    margin-left: 5px;
-    font-size: 2.5rem;
-  }
-  
-  .dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-  }
-  
-  .nav-item:hover .dropdown {
-    display: block;
-  }
-  
-  .dropdown-item {
-    display: block;
-    padding: 10px 15px;
-    color: blue;
-    text-decoration: none;
-  }
-  
-  .dropdown-item:hover {
-    background: #f0f0f0;
-  }
-  
-  .search-icon {
-    font-size: 18px;
-    margin: 0 10px;
-  }
-  
-  .get-in-touch-button {
-    background: #DA2124;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-left: 10px;
-    font-size: 1.5rem;
-  }
-  
-  .get-in-touch-button:hover {
-    background: rgb(5, 5, 26);
-  }
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
 
-  
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+  margin: 0 1px;
+}
+
+.nav-link {
+  color: #0A2863;
+  text-decoration: none;
+  padding: 10px 8px;
+  position: relative;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover {
+  text-decoration: overline;
+  text-decoration-color: red;
+}
+
+.nav-link .dropdown-icon {
+  margin-left: 5px;
+  font-size: 2.5rem;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-top: 3px solid red;
+}
+
+.nav-item:hover .dropdown {
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px 15px;
+  color: blue;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background: #f0f0f0;
+}
+
+.search-icon {
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.get-in-touch-button {
+  background: #DA2124;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+.get-in-touch-button:hover {
+  background: rgb(5, 5, 26);
+}

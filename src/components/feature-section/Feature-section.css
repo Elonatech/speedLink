@@ -55,7 +55,7 @@
   }
   
   .who-we-do-button {
-    background-color: rgb(196, 8, 8);
+    background-color: rgb(140, 14, 14);
     color: rgba(255, 255, 255, 0.799);
     border: none;
     padding: 15px 28px;
@@ -66,15 +66,24 @@
   
   .details-content {
     background: linear-gradient(to bottom, rgba(238, 6, 6, 0.552), rgba(5, 5, 226, 0.609));
-    padding: 20px;
+    padding: 20px 50px;
     border-radius: 10px;
     color: white;
     margin-top: 20px;
     margin-left: 5rem;
+    line-height: 2.8em;
+  }
+
+  .details-content h3 {
+    width: 300px;
+  }
+
+  .details-content .arrow{
+    vertical-align: bottom;
   }
   
   .explore-more-button {
-    background-color: #0066ff;
+    background-color: #30C6DEB8;
     color: white;
     border: none;
     font-size: 2.2rem;
@@ -83,12 +92,22 @@
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
+    transition: transform 0.3s ease;
 
+  }
+
+  .explore-more-button:hover {
+    transform: scale(0.9);
   }
 
   .details-content h3 {
     margin-top: 22.5rem;
     font-size: 2.2rem;
+  }
+
+  .details-content .explor-arr {
+    font-size: 1.8rem;
+    vertical-align: bottom
   }
 
   .details-content ul {
@@ -102,5 +121,15 @@
 
 .arrow {
     font-size: 24px;
+}
+
+.service-details .tel-icon {
+  font-size: 1.8rem;
+  vertical-align: bottom;
+}
+
+.service-details .wta-btn:hover {
+   background-color: blue;
+   transition: background-color 0.5s linear;
 }
   

@@ -29,4 +29,14 @@
     color: rgb(12, 91, 210);
   }
 
+  .technology-stack-container .dot {
+    color: rgb(12, 91, 210);
+  }
+  .technology-stack-container .dash {
+    color: rgb(12, 91, 210);
+    font-size: 4rem;
+    vertical-align: bottom;
+    margin-bottom: -13px;
+  }
+
   
