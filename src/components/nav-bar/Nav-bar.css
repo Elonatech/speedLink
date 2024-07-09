@@ -62,8 +62,13 @@
 .dropdown-item {
   display: block;
   padding: 10px 15px;
-  color: blue;
+  color: rgb(2, 16, 93);
   text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.dropdown-item:hover {
+  color: #da7a21;
 }
 
 .dropdown-item:hover {
