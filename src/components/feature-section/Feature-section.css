@@ -1,126 +1,168 @@
 .services {
-    width: 1200px;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    margin: 0 auto;
-  }
-  
-  h2 {
-    color: rgb(2, 2, 86);
-    font-size: 3rem;
-    margin-bottom:20px;
-  }
-  
-  p {
-    color: #4A4A4A;
-    font-size: 2rem;
-    width: 60%;
-    line-height: 1.8em;
-  }
-  
-  .services-container {
-    display: flex;
-  }
-  
-  .services-list {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .service-item {
-    padding: 20px 50px;
-    border: 1px solid #f0f0f0;
-    margin: 5px 0;
-    cursor: pointer;
-    width: 40rem;
-    height: auto;
-    font-size: 2.4rem;
-    border-radius: 0 40px 40px 0;
-    border: 1px solid rgba(187, 11, 11, 0.789);
-  }
-  
-  .service-item.active {
-    background-color: rgb(169, 22, 22);
-    color: white;
-  }
-  
-  .service-details {
-    margin-left: 20px;
-    flex-grow: 1;
-  }
-  
-  .details-header {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .who-we-do-button {
-    background-color: rgb(140, 14, 14);
-    color: rgba(255, 255, 255, 0.799);
-    border: none;
-    padding: 15px 28px;
-    cursor: pointer;
-    font-size: 2rem;
-    border-radius: 10px;
-  }
-  
-  .details-content {
-    background: linear-gradient(to bottom, rgba(238, 6, 6, 0.552), rgba(5, 5, 226, 0.609));
-    padding: 20px 50px;
-    border-radius: 10px;
-    color: white;
-    margin-top: 20px;
-    margin-left: 5rem;
-    line-height: 2.8em;
-  }
+  width: 1200px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+}
 
-  .details-content h3 {
-    width: 300px;
-  }
+h2 {
+  color: rgb(2, 2, 86);
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
 
-  .details-content .arrow{
-    vertical-align: bottom;
-  }
-  
-  .explore-more-button {
-    background-color: #30C6DEB8;
-    color: white;
-    border: none;
-    font-size: 2.2rem;
-    padding: 15px 50px;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+p {
+  color: #4a4a4a;
+  font-size: 2rem;
+  width: 60%;
+  line-height: 1.8em;
+}
 
-  }
+.services-container {
+  display: flex;
+}
 
-  .explore-more-button:hover {
-    transform: scale(0.9);
-  }
+.services-list {
+  display: flex;
+  flex-direction: column;
+}
 
-  .details-content h3 {
-    margin-top: 22.5rem;
-    font-size: 2.2rem;
-  }
+.service-item {
+  padding: 20px 50px;
+  border: 1px solid #f0f0f0;
+  margin: 5px 0;
+  cursor: pointer;
+  width: 40rem;
+  height: auto;
+  font-size: 2.4rem;
+  border-radius: 0 40px 40px 0;
+  border: 1px solid rgba(187, 11, 11, 0.789);
+}
 
-  .details-content .explor-arr {
-    font-size: 1.8rem;
-    vertical-align: bottom
-  }
+.service-item.active {
+  background-color: rgb(169, 22, 22);
+  color: white;
+}
 
-  .details-content ul {
-    list-style-type: none;
-    margin-top: 1.2rem;
-  }
+.service-details {
+  margin-left: 20px;
+  flex-grow: 1;
+}
 
-  .details-content ul li {
-    font-size: 1.8em;
-  }
+.details-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.who-we-do-button {
+  background-color: rgb(140, 14, 14);
+  color: rgba(255, 255, 255, 0.799);
+  border: none;
+  padding: 15px 28px;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+.details-content {
+  background: linear-gradient(to bottom, rgba(238, 6, 6, 0.118), rgba(5, 5, 226, 0.08));
+  padding: 20px 50px;
+  border-radius: 10px;
+  color: white;
+  margin-top: 20px;
+  margin-left: 5rem;
+  line-height: 2.8em;
+  position: relative;
+}
+
+.service-details.IT_Services .details-content {
+  background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+}
+
+.service-details.Network_Services .details-content {
+  background-image: url('https://images.unsplash.com/photo-1520869562399-e772f042f422?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+}
+
+.service-details.Technical_Security .details-content {
+  background-image: url('https://media.istockphoto.com/id/1477430518/photo/medical-cybersecurity-tablet-and-hands-of-doctor-surgeon-or-nurse-with-virtual-hologram-for.jpg?s=2048x2048&w=is&k=20&c=reSUAXLFGLrKYPEcNwCNshs3DxHTSGou559Wwuhn-kA=');
+  background-size: cover;
+  background-position: center;
+}
+
+.service-details.Digital_Marketing .details-content {
+  background-image: url('https://images.unsplash.com/photo-1557838923-2985c318be48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGlnaXRhbCUyMG1hcmtldGluZ3xlbnwwfHwwfHx8MA%3D%3D');
+  background-size: cover;
+  background-position: center;
+}
+
+.service-details.Cloud_Services .details-content {
+  background-image: url('https://media.istockphoto.com/id/1695598546/photo/businessman-using-tablet-to-transfer-data-on-cloud-computing-seamless-data-transfer-and.webp?b=1&s=170667a&w=0&k=20&c=cV19qWSSMWVTunFQHjGdxOgmDMFqTZ972atFPYd9mtc=');
+  background-size: cover;
+  background-position: center;
+}
+
+.service-details.Collaboration_System .details-content {
+  background-image: url('https://media.istockphoto.com/id/1478421401/photo/diverse-male-and-female-warehouse-inventory-managers-talking-using-laptop-computer-and.webp?b=1&s=170667a&w=0&k=20&c=IeHQmHLyw3imdCqaKHBUkOs6T2CVs3mwRzoWIFI2N9M=');
+  background-size: cover;
+  background-position: center;
+}
+
+.service-details.Certified_Training .details-content {
+  background-image: url('https://media.istockphoto.com/id/619257608/photo/paraplegic-person-receiving-certificate-after-seminar.jpg?s=2048x2048&w=is&k=20&c=24SktNjDUs6EBwCKXl7wpYQ_QPf_AsOe3--0_p8Bjq8=');
+  background-size: cover;
+  background-position: center;
+}
+
+.details-content h3 {
+  width: 300px;
+}
+
+.details-content .arrow {
+  vertical-align: bottom;
+}
+
+.explore-more-button {
+  background-color: #30c6deb8;
+  color: white;
+  border: none;
+  font-size: 2.2rem;
+  padding: 15px 50px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.explore-more-button:hover {
+  transform: scale(0.9);
+}
+
+.details-content h3 {
+  margin-top: 22.5rem;
+  font-size: 2.2rem;
+}
+
+.details-content .explor-arr {
+  font-size: 1.8rem;
+  vertical-align: bottom;
+}
+
+.details-content ul {
+  list-style-type: none;
+  margin-top: 1.2rem;
+}
+
+.details-content ul li {
+  font-size: 1.8em;
+}
 
 .arrow {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .service-details .tel-icon {
@@ -129,7 +171,6 @@
 }
 
 .service-details .wta-btn:hover {
-   background-color: blue;
-   transition: background-color 0.5s linear;
+  background-color: blue;
+  transition: background-color 0.5s linear;
 }
-  

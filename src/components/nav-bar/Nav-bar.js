@@ -67,7 +67,7 @@ const Navbar = () => {
         <li className="nav-item">
           <a href="#product" className="nav-link">Product <RiArrowDropDownLine className='dropdown-icon'/></a>
           <div className="dropdown">
-            <a href="#product1" className="dropdown-item">Link 1</a>
+            <a href="https://laptop-dch2e8rwu-elonatech1s-projects.vercel.app/" className="dropdown-item">laptop</a>
             <a href="#product2" className="dropdown-item">Link 2</a>
             <a href="#product3" className="dropdown-item">Link 3</a>
           </div>

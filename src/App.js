@@ -25,7 +25,7 @@ function App() {
       <TechnologyStack /> 
       <TopClients />
       <Contact />
-      <Footer />                      
+      <Footer />                    
     </div>
   );
 }

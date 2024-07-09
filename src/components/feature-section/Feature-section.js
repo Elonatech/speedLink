@@ -22,7 +22,7 @@ const serviceDetails = {
       'Software Installation',
       'Web design and development'
     ],
-    image: '/path/to/image.png'
+    image: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   'Network Services': {
     title: 'NETWORKING SERVICES',
@@ -32,7 +32,7 @@ const serviceDetails = {
       'Fibre to the home',
       'ISP – Internet Service Provider'
     ],
-    image: '/path/to/image.png'
+    image: 'https://images.unsplash.com/photo-1520869562399-e772f042f422?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   'Technical Security': {
     title: 'TECHNICAL SECURITY',
@@ -42,7 +42,7 @@ const serviceDetails = {
       'GPS tracking system',
       'Access control and time-attendance solutions'
     ],
-    image: '/path/to/image.png'
+    image: 'https://media.istockphoto.com/id/1477430518/photo/medical-cybersecurity-tablet-and-hands-of-doctor-surgeon-or-nurse-with-virtual-hologram-for.jpg?s=2048x2048&w=is&k=20&c=reSUAXLFGLrKYPEcNwCNshs3DxHTSGou559Wwuhn-kA='
   },
   'Digital Marketing': {
     title: 'DIGITAL MARKETING',
@@ -53,7 +53,7 @@ const serviceDetails = {
       'Search Engine Optimization',
       'Email marketing'
     ],
-    image: '/path/to/image.png'
+    image: 'https://images.unsplash.com/photo-1557838923-2985c318be48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGlnaXRhbCUyMG1hcmtldGluZ3xlbnwwfHwwfHx8MA%3D%3D'
   },
   'Cloud Services': {
     title: 'CLOUD SERVICES',
@@ -62,7 +62,7 @@ const serviceDetails = {
       'Cloud Hosting',
       'Cloud Based ERP/CRM'
     ],
-    image: '/path/to/image.png'
+    image: 'https://media.istockphoto.com/id/1695598546/photo/businessman-using-tablet-to-transfer-data-on-cloud-computing-seamless-data-transfer-and.webp?b=1&s=170667a&w=0&k=20&c=cV19qWSSMWVTunFQHjGdxOgmDMFqTZ972atFPYd9mtc='
   },
   'Collaboration System': {
     title: 'COMMUNICATION & COLLABORATION SYSTEM',
@@ -71,7 +71,7 @@ const serviceDetails = {
       'Live Streaming',
       'Radio Communications Systems'
     ],
-    image: '/path/to/image.png'
+    image: 'https://media.istockphoto.com/id/1478421401/photo/diverse-male-and-female-warehouse-inventory-managers-talking-using-laptop-computer-and.webp?b=1&s=170667a&w=0&k=20&c=IeHQmHLyw3imdCqaKHBUkOs6T2CVs3mwRzoWIFI2N9M='
   },
   'Certified Training': {
     title: 'CERTIFIED TRAINING',
@@ -81,7 +81,7 @@ const serviceDetails = {
       'Web app development',
       'Web design and Development'
     ],
-    image: '/path/to/image.png'
+    image: 'https://media.istockphoto.com/id/619257608/photo/paraplegic-person-receiving-certificate-after-seminar.jpg?s=2048x2048&w=is&k=20&c=24SktNjDUs6EBwCKXl7wpYQ_QPf_AsOe3--0_p8Bjq8='
   }
 };
 
@@ -104,7 +104,7 @@ const Services = () => {
             </div>
           ))}
         </div>
-        <div className="service-details">
+        <div className={`service-details service-details-${activeService}`}>
           <div className="details-header">
             <button className="who-we-do-button wta-btn">Who we do <BiLogoTelegram className='tel-icon'/> </button>
           </div>
