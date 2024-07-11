@@ -4,6 +4,10 @@
   font-family: Arial, sans-serif;
   margin: 0 auto;
 }
+.services-container {
+  display: flex;
+  align-items: stretch; /* This ensures both columns have the same height */
+}
 
 h2 {
   color: rgb(2, 2, 86);
@@ -65,100 +69,103 @@ p {
 }
 
 .details-content {
-  background: linear-gradient(to bottom, rgba(238, 6, 6, 0.118), rgba(5, 5, 226, 0.08));
+  position: relative;
   padding: 20px 50px;
   border-radius: 10px;
   color: white;
   margin-top: 20px;
   margin-left: 5rem;
   line-height: 2.8em;
-  position: relative;
+  height: 100%; /* This will make it fill the parent's height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.service-details.IT_Services .details-content {
+.details-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(248, 3, 3, 0.5), rgba(4, 15, 229, 0.7));
+  border-radius: 10px;
+}
+
+.details-content > div {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+
+.service-details-IT_Services .details-content {
   background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
   background-position: center;
 }
 
-.service-details.Network_Services .details-content {
+.service-details-Network_Services .details-content {
   background-image: url('https://images.unsplash.com/photo-1520869562399-e772f042f422?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
   background-position: center;
 }
 
-.service-details.Technical_Security .details-content {
+.service-details-Technical_Security .details-content {
   background-image: url('https://media.istockphoto.com/id/1477430518/photo/medical-cybersecurity-tablet-and-hands-of-doctor-surgeon-or-nurse-with-virtual-hologram-for.jpg?s=2048x2048&w=is&k=20&c=reSUAXLFGLrKYPEcNwCNshs3DxHTSGou559Wwuhn-kA=');
   background-size: cover;
   background-position: center;
 }
 
-.service-details.Digital_Marketing .details-content {
+.service-details-Digital_Marketing .details-content {
   background-image: url('https://images.unsplash.com/photo-1557838923-2985c318be48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGlnaXRhbCUyMG1hcmtldGluZ3xlbnwwfHwwfHx8MA%3D%3D');
   background-size: cover;
   background-position: center;
 }
 
-.service-details.Cloud_Services .details-content {
+.service-details-Cloud_Services .details-content {
   background-image: url('https://media.istockphoto.com/id/1695598546/photo/businessman-using-tablet-to-transfer-data-on-cloud-computing-seamless-data-transfer-and.webp?b=1&s=170667a&w=0&k=20&c=cV19qWSSMWVTunFQHjGdxOgmDMFqTZ972atFPYd9mtc=');
   background-size: cover;
   background-position: center;
 }
 
-.service-details.Collaboration_System .details-content {
+.service-details-Collaboration_System .details-content {
   background-image: url('https://media.istockphoto.com/id/1478421401/photo/diverse-male-and-female-warehouse-inventory-managers-talking-using-laptop-computer-and.webp?b=1&s=170667a&w=0&k=20&c=IeHQmHLyw3imdCqaKHBUkOs6T2CVs3mwRzoWIFI2N9M=');
   background-size: cover;
   background-position: center;
 }
 
-.service-details.Certified_Training .details-content {
+.service-details-Certified_Training .details-content {
   background-image: url('https://media.istockphoto.com/id/619257608/photo/paraplegic-person-receiving-certificate-after-seminar.jpg?s=2048x2048&w=is&k=20&c=24SktNjDUs6EBwCKXl7wpYQ_QPf_AsOe3--0_p8Bjq8=');
   background-size: cover;
   background-position: center;
 }
 
 .details-content h3 {
-  width: 300px;
-}
-
-.details-content .arrow {
-  vertical-align: bottom;
-}
-
-.explore-more-button {
-  background-color: #30c6deb8;
-  color: white;
-  border: none;
-  font-size: 2.2rem;
-  padding: 15px 50px;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.explore-more-button:hover {
-  transform: scale(0.9);
-}
-
-.details-content h3 {
-  margin-top: 22.5rem;
-  font-size: 2.2rem;
-}
-
-.details-content .explor-arr {
-  font-size: 1.8rem;
-  vertical-align: bottom;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 .details-content ul {
   list-style-type: none;
-  margin-top: 1.2rem;
+  padding-left: 0;
+  flex-grow: 1; 
+  overflow-y: auto; 
 }
 
 .details-content ul li {
-  font-size: 1.8em;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.details-content .arrow {
+  margin-right: 10px;
 }
 
 .arrow {
@@ -168,6 +175,24 @@ p {
 .service-details .tel-icon {
   font-size: 1.8rem;
   vertical-align: bottom;
+}
+
+.explore-more-button {
+  background-color: #30c6de;
+  color: white;
+  border: none;
+  font-size: 1.6rem;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  align-self: flex-start; 
+  margin-bottom: 2rem;
+}
+
+.explore-more-button:hover {
+  background-color: #2bb1c7;
 }
 
 .service-details .wta-btn:hover {

@@ -104,7 +104,7 @@ const Services = () => {
             </div>
           ))}
         </div>
-        <div className={`service-details service-details-${activeService}`}>
+        <div className={`service-details service-details-${activeService.replace(/\s+/g, '_')}`}>
           <div className="details-header">
             <button className="who-we-do-button wta-btn">Who we do <BiLogoTelegram className='tel-icon'/> </button>
           </div>
