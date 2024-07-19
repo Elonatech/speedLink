@@ -2,13 +2,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3rem 12rem;
+  padding: 1rem 2rem;
   background: #fff;
 }
 
 .logo {
   font-size: 24px;
   font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -92,4 +97,84 @@
 
 .get-in-touch-button:hover {
   background: rgb(5, 5, 26);
+}
+
+.grid-item h3 {
+  font-size: 12px;
+  margin-left: 13px;
+}
+
+
+.dropdown.aboutOne .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dropdown.aboutOne .grid-item {
+  padding: 10px;
+}
+
+.dropdown.aboutOne h3 {
+  margin-bottom: 2px;
+}
+
+.dropdown-item {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  list-style-type: none;
+  width: 350px;
+  line-height: 0.2em;
+}
+
+.dropdown-item:hover {
+  color: #007BFF;
+}
+
+.grid-item .squareIcon {
+  background-color: rgba(132, 64, 64, 0.785);
+  margin-right: 10px;
+}
+
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.nav-links-mobile {
+    display: flex;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .dropdown {
+    position: static;
+    box-shadow: none;
+    border-top: none;
+  }
+
+  .dropdown-item {
+    padding: 10px 0;
+  }
+
+  .get-in-touch-button {
+    margin: 10px 0;
+  }
 }
