@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <div className="hero-container">
       <video className="background-video" autoPlay loop muted>
-      <source src="https://res.cloudinary.com/dny7tqd0d/video/upload/v1720457608/Circuit-27725_xvfck7.mp4" type="video/mp4" />
+      <source src="https:\/\/speedlinkng.com\/wp-content\/uploads\/2022\/09\/Circuit-27725.mp4" type="video/mp4" />
     </video>
       <div className="content">
         <h1>We provide comprehensive IT solutions that makes businesses standout</h1>
